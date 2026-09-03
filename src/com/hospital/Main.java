@@ -17,7 +17,7 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        seedSampleData();
+        
 
         boolean running = true;
         while (running) {
@@ -243,13 +243,5 @@ public class Main {
         return scanner.nextLine().trim();
     }
 
-    /** Pre-loads data so the demo doesn't require typing everything live. */
-    private static void seedSampleData() {
-//        patientRecords.insert(new Patient(50, "Nimal Perera", 45, "0771234567", "Chest pain"));
-//        patientRecords.insert(new Patient(30, "Kamala Silva", 32, "0712345678", "Fracture"));
-//        patientRecords.insert(new Patient(70, "Ruwan Fernando", 60, "0761112233", "Asthma"));
-//        patientRecords.insert(new Patient(20, "Ayesha Jayawardena", 28, "0759876543", "Migraine"));
-//        patientRecords.insert(new Patient(40, "Sunil Bandara", 51, "0724445566", "Diabetes"));
-//        System.out.println("Sample patient data loaded.\n");
-    }
+    
 }
