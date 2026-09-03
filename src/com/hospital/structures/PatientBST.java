@@ -110,6 +110,24 @@ public class PatientBST {
         return node;
     }
 
+    /** Prints all patients in ascending ID order. Handles the empty case. */
+    public void displayInOrder() {
+        if (isEmpty()) {
+            System.out.println("No patient records found. BST is empty.");
+            return;
+        }
+        System.out.println("--- Patient Records (In-Order: Ascending ID) ---");
+        inOrderRec(root);
+    }
+
+    private void inOrderRec(Node current) {
+        if (current != null) {
+            inOrderRec(current.left);
+            System.out.println(current.patient);
+            inOrderRec(current.right);
+        }
+    }
+
     public boolean isEmpty() {
         return root == null;
     }
